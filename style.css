@@ -6,7 +6,10 @@
 body {
 
 }
-
+@font-face {
+  font-family: A;
+  src: url(https://zhanyarios.ml/fontkrd/aseets/fonts/23.ttf);
+}
 #notfound {
   position: relative;
   height: 100vh;
@@ -37,7 +40,7 @@ body {
 }
 
 .notfound .notfound-404 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: A;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -57,7 +60,7 @@ body {
 
 
 .notfound .notfound-404 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: A;
   position: absolute;
   left: 0;
   right: 0;
@@ -72,7 +75,7 @@ body {
 }
 
 .notfound a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: A;
   display: inline-block;
   text-transform: uppercase;
   color: #ff005a;
