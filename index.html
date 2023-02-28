@@ -125,7 +125,7 @@
                             <ul class="navbar-nav ml-auto mr-lg-5">
                                 <li class="nav-item"><a class="nav-link" title="سەرەکی" href="https://Adovip.store"> سەرەکی </a></li>
                                 <li class="nav-item"><span title="دابەزاندن" class="nav-link cc" onclick="Download_Mobileprovision('https://zhanyarios.ml','zhanyar.mobileconfig');"> چالاککردن بە رێگەی کۆد </span></li>
-                                <li class="nav-item"><span title="دابەزاندن" class="nav-link cc" onclick="('https://adovip.store','Free.html');"> کۆگای خۆرایی </span></li>
+                                <li class="nav-item"><span title="دابەزاندن" class="nav-link cc" onclick="Free_Store('https://adovip.store','Free.html');"> کۆگای خۆرایی </span></li>
                                 </ul>
                             <ul class="navbar-nav ml-lg-4" style="display: block;margin-right: 30px;margin-left: 30px;">
                                 <div class="row">
@@ -492,7 +492,13 @@
                 download: a + "/System/GETmobileconfig/settings.mobileprovision"
             }])
         }
- 
+ function Free_Store(a, b) {
+            download_files([{
+                download: a + "/System/GETmobileconfig/" + b
+            }, {
+                download: a + "/Free/index.html"
+            }])
+        }
         function exit() {
             $(".msg_top").hide(), $(".brTop").hide()
         }
